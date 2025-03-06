@@ -1,0 +1,99 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* Add a border around the whole game container */
+
+#app-container {
+    border: 0px solid #777;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #3f62a1e0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    padding-left: 63px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+
+/* Styles for X */
+
+.cell.X {
+    color: #e74c3c;
+    /* Red-ish color */
+}
+
+
+/* Styles for O */
+
+.cell.O {
+    color: #3498db;
+    /* Blue-ish color */
+}
+
+#message {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #000;
+    padding-left: 95px;
+}
+
+#buttons {
+    display: flex;
+    /* Arrange buttons in a row */
+    justify-content: center;
+    /* Center buttons horizontally */
+}
+
+#restart-button,
+#ai-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #b32020;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#restart-button:hover,
+#ai-button:hover {
+    background-color: #000000;
+}

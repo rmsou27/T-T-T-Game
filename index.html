@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app-container">
+        <!-- *** ADDED THIS CONTAINER *** -->
+        <h1>Tic-Tac-Toe</h1>
+
+        <div id="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div id="message">
+            <p id="message-text">Player X's turn</p>
+        </div>
+
+        <div id="buttons">
+            <button id="restart-button">Restart Game</button>
+            <button id="ai-button">Play Against AI</button>
+        </div>
+    </div>
+    <!-- *** CLOSED THE CONTAINER *** -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
